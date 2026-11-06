@@ -146,7 +146,7 @@ const ConferenceEvent = () => {
 
     const navigateToProducts = (idType) => {
         if (idType == '#venue' || idType == '#addons' || idType == '#meals') {
-          if (showItems) { // Check if showItems is false
+          if (!showItems) { // Check if showItems is false
             setShowItems(!showItems); // Toggle showItems to true only if it's currently false
           }
         }
